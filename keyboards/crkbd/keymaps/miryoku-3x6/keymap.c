@@ -20,6 +20,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BUTTON] = U_MACRO_VA_ARGS(LAYOUT_miryoku, MIRYOKU_LAYER_BUTTON)
 };
 
+const uint16_t PROGMEM tab_combo[] = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM dquote_combo[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM del_combo[] = {KC_M, KC_COMM, COMBO_END};
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(tab_combo, KC_TAB),
+    COMBO(dquote_combo, LSFT(KC_QUOT)),
+    COMBO(del_combo, KC_DEL),
+};
+
 #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
 const uint16_t PROGMEM thumbcombos_base_right[] = {LT(SYM, KC_ENT), LT(NUM, KC_BSPC), COMBO_END};
 const uint16_t PROGMEM thumbcombos_base_left[] = {LT(NAV, KC_SPC), LT(MOUSE, KC_TAB), COMBO_END};
