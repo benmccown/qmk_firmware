@@ -24,20 +24,25 @@
 #undef MOUSEKEY_DELAY
 #define MOUSEKEY_DELAY          0
 #undef MOUSEKEY_INTERVAL
-#define MOUSEKEY_INTERVAL       16
+#define MOUSEKEY_INTERVAL       12
 #undef MOUSEKEY_WHEEL_DELAY
 #define MOUSEKEY_WHEEL_DELAY    0
 #undef MOUSEKEY_MAX_SPEED
-#define MOUSEKEY_MAX_SPEED      6
+#define MOUSEKEY_MAX_SPEED      7
 #undef MOUSEKEY_TIME_TO_MAX
-#define MOUSEKEY_TIME_TO_MAX    64
+#define MOUSEKEY_TIME_TO_MAX    80
+
+// Custom 
+#define COMBO_COUNT 3
+#define COMBO_TERM 50
+#define EXTRA_SHORT_COMBOS
 
 // Thumb Combos
-#if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
-  #define COMBO_COUNT 8
-  #define COMBO_TERM 200
-  #define EXTRA_SHORT_COMBOS
-#endif
+// #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
+//   #define COMBO_COUNT 8
+//   #define COMBO_TERM 200
+//   #define EXTRA_SHORT_COMBOS
+// #endif
 
 #define LAYOUT_miryoku(\
        K00,   K01,   K02,   K03,   K04,          K05,   K06,   K07,   K08,   K09,\
