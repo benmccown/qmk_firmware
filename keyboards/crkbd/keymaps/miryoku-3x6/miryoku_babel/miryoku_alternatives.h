@@ -10,7 +10,7 @@
 // In use
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
 KC_Q,              KC_W,              KC_E,              KC_R,              KC_T,              KC_Y,              KC_U,              KC_I,              KC_O,              KC_P,              \
-LCTL_T(KC_A),      LGUI_T(KC_S),      LALT_T(KC_D),      LSFT_T(KC_F),      KC_G,              KC_H,              LSFT_T(KC_J),      LALT_T(KC_K),      LGUI_T(KC_L),      LCTL_T(KC_SCLN),   \
+LCTL_T(KC_A),      LGUI_T(KC_S),      LALT_T(KC_D),      LSFT_T(KC_F),      KC_G,              KC_H,              RSFT_T(KC_J),      LALT_T(KC_K),      LGUI_T(KC_L),      LCTL_T(KC_SCLN),   \
 KC_Z,              KC_X,              KC_C,              KC_V,              KC_B,              KC_N,              KC_M,              KC_COMM,           KC_DOT,            KC_SLSH,           \
 U_NP,              U_NP,              U_NA,              LT(NUM, KC_ESC),   LT(SYM, KC_SPC),   LT(MOUSE, KC_BSPC),  LT(NAV, KC_ENT), U_NA,              U_NP,              U_NP
 
