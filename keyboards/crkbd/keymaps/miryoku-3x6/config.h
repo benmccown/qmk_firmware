@@ -33,7 +33,7 @@
 #define MOUSEKEY_TIME_TO_MAX    80
 
 // Custom 
-#define COMBO_COUNT 4
+#define COMBO_COUNT 5
 #define COMBO_TERM 50
 #define EXTRA_SHORT_COMBOS
 

@@ -21,14 +21,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM tab_combo[] = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM del_combo[] = {KC_V, KC_B, COMBO_END};
 const uint16_t PROGMEM caps_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM dquote_combo[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM del_combo[] = {KC_M, KC_COMM, COMBO_END};
+const uint16_t PROGMEM eq_combo[] = {KC_M, KC_COMM, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(tab_combo, KC_TAB),
+    COMBO(del_combo, KC_DEL),
     COMBO(caps_combo, CAPSWRD),
     COMBO(dquote_combo, LSFT(KC_QUOT)),
-    COMBO(del_combo, KC_DEL),
+    COMBO(eq_combo, KC_EQL),
 };
 
 #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
